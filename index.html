@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather1</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <input type="text" id="cityInput" placeholder="Enter city name...">
+    <button id="searchBtn" onclick="onSearch()">Search</button>
+    <div id="container" style="display: none;">
+        <div class="weather-container">
+            <h2 id="location"></h2>
+            <div style="display: flex;">
+                <img width="35" height="35" src="cloud-icon.png">
+                <h2 class="weather-header" id="weather"></h3>
+            </div>
+            <div>
+                <strong id="feels-like"></strong>
+            </div>
+            <div style="display: flex;">
+                <h3>Min temp: <span id="min-temp"></span></h3>
+                <h3>Max temp: <span id="max-temp"></span></h3>
+            </div>
+            <div style="display: flex;">
+                <h3>Humidity: <span id="humid"></span></h3>
+                <h3>Visibility: <span id="visibility"></span></h3>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe width="450" height="400" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=london&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0">
+            </iframe>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

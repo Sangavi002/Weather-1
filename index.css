@@ -1,0 +1,35 @@
+#container {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.weather-container {
+    /* width: 50%; */
+    /* border: 1px solid; */
+    padding: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #B5C0D0;
+}
+
+.weather-header {
+    margin: 3px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 315px;
+    padding: 12px;
+}
+
+button {
+    padding: 12px;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
